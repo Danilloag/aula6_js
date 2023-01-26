@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06 de JS</title>
+</head>
+
+<body>
+
+
+    <script>
+        // let anosPiloto = prompt('Há quantos anos o piloto está vinculado a Mach1?');
+        // if (isNaN(anosPiloto)) {
+        //     alert('Por favor, digite somente o número.');
+        // } else {
+        //     anosPiloto = Number(anosPiloto);
+        //     if (anosPiloto < 2) {
+        //         alert('O piloto ainda não tem o tempo mínimo de 2 anos.')
+        //     } else {
+        //         alert(`O piloto já participou de ${parseInt(anosPiloto/2)} reciclagens.`)
+        //     }
+        // }
+
+        let anosPiloto = prompt('Há quantos anos o piloto está vinculado a Mach1?');
+        if (isNaN(anosPiloto)) {
+            alert('Por favor, digite somente o número.');
+        } else {
+            let mensagem = '';
+            let contagem = 0;
+            let reciclagem = 0;
+            while (contagem <= anosPiloto) {
+                if (anosPiloto < 2) {
+                    mensagem = 'O piloto ainda não tem o tempo mínimo de 2 anos.';
+                }else{
+                    mensagem = `O piloto já realizou ${reciclagem} reciclagens.`
+                    reciclagem++
+                }
+                contagem += 2;
+            }
+            alert(mensagem)
+        }
+    </script>
+</body>
+
+</html>
